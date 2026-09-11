@@ -38,3 +38,12 @@ PZEM-004T -> Điện áp, dòng điện, công suất, điện năng
 => sensor không tự quyết định phải làm gì, nó chỉ cung cấp thông tin
 
 ESP32 là vi điều khiển (Microcontroller Unit - MCU) có thể đọc cảm biến, xử lý dữ liệu, điều khiển LED, điều khiển relay, điều khiển motor, kết nối WI-FI, giao tiếp Bluetooth, gửi dữ liệu lên Internet, .....
+
+Bên trong ESP32: sensor -> ESP32 (GPIO, CPU, Memory, Wi-Fi, Bluetooth) -> relay / LED
+
+CPU là nơi thực hiện chương trình "Nếu nhiệt độ > 30 độ C" -> Bật quạt
+GPIO là các chân của ESP32 giao tiếp với bên ngoài, có 2 kiểu cơ bản:
++) Input: ESP32 đọc dữ liệu: Button -> GPIO -> ESP32
++) Output: ESP điều khiển: ESP32 -> GPIO -> LED
+
+
